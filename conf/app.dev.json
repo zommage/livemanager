@@ -1,0 +1,25 @@
+{
+    "BaseConf": {
+        "HttpPort": "16271",
+        "HttpsPort": "16272",
+        "SslKey": "./conf/devssl.key",
+        "SslCrt": "./conf/devssl.crt",
+        "Env": "dev"
+    },
+
+    "DbConf": {
+        "DbName": "dbbase",
+        "DbHost": "192.168.0.1",
+        "DbPort": "3306",
+        "DbUser": "root",
+        "DbPassword": "root",
+        "DbLogEnable": false, 
+        "DbMaxConnect": 300,
+        "DbIdleConnect": 10     
+    },
+
+    "LogConf": {
+        "LogPath": "./logs/livemanager.log",
+        "LogLevel": "INFO"   
+    }    
+}
