@@ -9,14 +9,14 @@
     },
 
     "DbConf": {
-        "DbName": "ruokdraw",
-        "DbHost": "35.201.132.138",
+        "DbName": "aaaa",
+        "DbHost": "192.168.0.1",
         "DbPort": "3306",
         "DbUser": "root",
-        "DbPassword": "e(Nz[,xa^%wI(lEI",
+        "DbPassword": "root",
         "DbLogEnable": false, 
         "DbMaxConnect": 300,
-        "DbIdleConnect": 10     
+        "DbIdleConnect": 10    
     },
 
     "LogConf": {
