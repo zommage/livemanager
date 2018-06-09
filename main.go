@@ -12,8 +12,10 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/zommage/livemanager/common"
 	"github.com/zommage/livemanager/conf"
 	. "github.com/zommage/livemanager/logs"
+	models "github.com/zommage/livemanager/models"
 	liveRouter "github.com/zommage/livemanager/router"
 )
 
@@ -38,6 +40,17 @@ func Init() error {
 	err = InitLog(confInfo.LogConf.LogPath, confInfo.LogConf.LogLevel)
 	if err != nil {
 		return fmt.Errorf("init log is err: %v", err)
+	}
+
+	err = models.InitDb()
+	if err != nil {
+		return fmt.Errorf("init db err: %v", err)
+	}
+
+	// 初始化 rsa 加密
+	err = common.InitRsaKey()
+	if err != nil {
+		return fmt.Errorf("init rsa key err: %v", err)
 	}
 
 	return nil

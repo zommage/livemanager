@@ -14,11 +14,12 @@ type Config struct {
 }
 
 type BaseConf struct {
-	HttpPort  string `json:"HttpPort"`  // http port
-	HttpsPort string `json:"HttpsPort"` // https port
-	SslKey    string `json:"SslKey"`    // ssl key
-	SslCrt    string `json:"SslCrt"`    // ssl crt
-	Env       string `json:"Env"`       // 环境信息
+	HttpPort   string `json:"HttpPort"`   // http port
+	HttpsPort  string `json:"HttpsPort"`  // https port
+	SslKey     string `json:"SslKey"`     // ssl key
+	SslCrt     string `json:"SslCrt"`     // ssl crt
+	Env        string `json:"Env"`        // 环境信息
+	RsaSertKey string `json:"RsaSertKey"` // rsa 的私钥路径
 }
 
 // mysql db config

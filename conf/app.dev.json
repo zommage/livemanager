@@ -4,15 +4,16 @@
         "HttpsPort": "16272",
         "SslKey": "./conf/devssl.key",
         "SslCrt": "./conf/devssl.crt",
+        "RsaSertKey": "./conf/rsa.sert.key",
         "Env": "dev"
     },
 
     "DbConf": {
-        "DbName": "dbbase",
-        "DbHost": "192.168.0.1",
+        "DbName": "ruokdraw",
+        "DbHost": "35.201.132.138",
         "DbPort": "3306",
         "DbUser": "root",
-        "DbPassword": "root",
+        "DbPassword": "e(Nz[,xa^%wI(lEI",
         "DbLogEnable": false, 
         "DbMaxConnect": 300,
         "DbIdleConnect": 10     
